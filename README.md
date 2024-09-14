@@ -1,1 +1,1 @@
-352, Levkina
+231-352, Levkina Karina
