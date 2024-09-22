@@ -1,3 +1,4 @@
+/* Общие стили для всех страниц */
 * {
     box-sizing: border-box;
 }
@@ -7,10 +8,13 @@ body {
     margin: 0;
     padding: 0;
     color: #333;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Для фиксации футера внизу */
 }
 
 header {
-    background-color: #f6d9d9;
+    background-color: #f6d9d9; /* Розовый цвет шапки */
     padding: 20px;
     text-align: center;
 }
@@ -21,6 +25,9 @@ h1 {
 }
 
 nav {
+    display: flex;
+    flex-wrap: wrap; /* Позволяет элементам переноситься на новые строки */
+    justify-content: center; /* Выравнивание по центру */
     margin-top: 15px;
 }
 
@@ -34,11 +41,16 @@ nav a {
 }
 
 nav a:hover {
-    color: #e7a7d1;
+    color: tomato; /* Цвет при наведении */
+}
+
+nav a.active {
+    color: tomato; /* Цвет активной ссылки */
 }
 
 main {
     padding: 20px;
+    flex-grow: 1; /* Позволяет основному контенту занимать оставшееся пространство */
 }
 
 section {
@@ -50,39 +62,62 @@ h2 {
     margin-bottom: 10px;
 }
 
-img {
-    width: 50%;
-    height: auto;
-}
-
-ul {
-    list-style-type: disc;
-    padding-left: 20px;
-}
-
+/* Стили для таблицы меню */
 table {
-    width: 100%;
-    border-collapse: collapse;
+     width :100%; 
+     border-collapse :collapse; /* Объединение границ ячеек */
+     border :1px solid #ddd; /* Границы таблицы */
 }
-
 th, td {
-    padding: 10px;
-    border: 1px solid #ddd;
-    text-align: center;
+     padding :10px; 
+     border :1px solid #ddd; /* Границы ячеек */
+     text-align :center; 
 }
 
+/* Стили для футера */
 footer {
-    background-color: #f6d9d9;
-    color: rgb(6, 6, 6);
-    text-align: center;
-    padding: 20px;
+     background-color :#f6d9d9; 
+     color :rgb(6, 6, 6); 
+     text-align :center; 
+     padding :20px; 
 }
 
 footer a {
-    color: rgb(238, 116, 116);
-    text-decoration: none;
+     color :rgb(238, 116, 116); 
+     text-decoration :none; 
 }
 
 footer a:hover {
-    text-decoration: underline;
+     text-decoration :underline; 
+}
+
+/* Адаптивные стили для страницы «Собрать ланч» */
+@media (max-width :800px) {
+      section > div {
+          display:grid; 
+          grid-template-columns : repeat(3 ,1fr); 
+          gap :10px; /* Отступы между элементами сетки */  
+      }
+}
+
+@media (max-width :600px) {
+      h1 {
+          text-align :center; /* Центрирование заголовка */  
+          font-size :2em; /* Уменьшение размера шрифта */  
+      }
+
+      nav {
+          flex-direction :column; /* Вертикальное направление элементов в меню */  
+          align-items :center; /* Центрирование элементов по поперечной оси */  
+          margin-top :10px; /* Отступ сверху для меню */  
+          font-size :1.6em; /* Увеличение шрифта для ссылок на 4px */  
+      }
+
+      section > div {
+          display:grid; 
+          grid-template-columns : repeat(3 ,1fr); 
+          gap :10px; 
+          padding-bottom :20px; 
+          text-align:center; /* Центрирование текста в блоках с блюдами */  
+      }
 }
