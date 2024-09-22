@@ -21,6 +21,12 @@
     flex-direction: column;
     text-align: center;
  }
+ .centered-image {
+    display: block; /* Преобразуем изображение в блочный элемент */
+    margin: 0 auto; /* Центрируем изображение */
+    width: 80%; /* Устанавливаем ширину изображения (можно изменить по желанию) */
+    border-radius: 20px; /* Закругляем края изображения */
+ }
  
  .dish-container:hover {
     border: 2px solid tomato; /* Появление сплошной границы при наведении */
