@@ -12,6 +12,13 @@ body {
     flex-direction: column;
     min-height: 100vh; /* Для фиксации футера внизу */
 }
+.img {
+     display: block; /* Преобразуем изображение в блочный элемент */
+     margin-left: auto; /* Центрируем изображение */
+     margin-right: auto;
+     width: 80%; /* Устанавливаем ширину изображения (можно изменить по желанию) */
+     border-radius: 20px; /* Закругляем края изображения */
+ }
 
 header {
     background-color: #f6d9d9; /* Розовый цвет шапки */
