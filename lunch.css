@@ -21,13 +21,7 @@
     flex-direction: column;
     text-align: center;
  }
- .img {
-     display: block; /* Преобразуем изображение в блочный элемент */
-     margin-left: auto; /* Центрируем изображение */
-     margin-right: auto;
-     width: 80%; /* Устанавливаем ширину изображения (можно изменить по желанию) */
-     border-radius: 20px; /* Закругляем края изображения */
- }
+ 
  
  .dish-container:hover {
     border: 2px solid tomato; /* Появление сплошной границы при наведении */
