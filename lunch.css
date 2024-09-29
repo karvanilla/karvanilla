@@ -1,76 +1,108 @@
 /* Стили для страницы «Собрать ланч» */
 
 .dish-container {
-    display: grid; 
-    grid-template-columns: 1fr 1fr 1fr;
-    
-    align-items: center; 
-    background-color: white; 
-    padding-top: 30px; 
-    padding-bottom: 30px; 
-    padding-left: 40px; 
-    padding-right: 40px; 
-    border-radius: 35px; 
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
 
-    cursor: pointer; 
-    filter: drop-shadow(17px 19px 24px rgba(0, 0, 0, 0.13)); 
-    transition: border .3s;
- }
- .dish {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
- }
- 
- 
- .dish-container:hover {
-    border: 2px solid tomato; /* Появление сплошной границы при наведении */
- }
- 
- .dish-container img {
-    width: 70%; /* Уменьшение ширины изображения до 33% от родительского контейнера */
-    border-radius: 35px; /* Радиус закругления изображения */
-    margin-left: auto;
-    margin-right: auto;
-    display: block
- }
- 
- .dish-container p.price {
-    font-size: 1.2em; /* Увеличение размера шрифта цены */
-    margin: 5px 0;
- }
- 
- .dish-container p.name {
-    font-size: 1.5em; /* Увеличение размера шрифта названия блюда */
-    margin: 5px 0;
-    
- }
- 
- .dish-container p.volume {
-    color: gray; /* Изменение цвета текста на серый для веса/объема */
-    margin: 5px 0;
- }
- 
- .dish-container button {
-    background-color: #f1eee9; 
-    margin-top: 10px; /* Обязательный отступ сверху для кнопки */
-    padding-top: 10px;
-    padding-bottom: 10px;
-    padding-left: 30px;
-    padding-right: 30px;
-    border-radius: 10px; 
-    cursor: pointer; 
- }
- 
- .dish-container button:hover {
-    background-color: tomato; /* Изменение цвета фона кнопки при наведении */
- }
+  align-items: center;
+  background-color: white;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  padding-left: 40px;
+  padding-right: 40px;
+  border-radius: 35px;
 
- 
- /* Адаптивные стили для страницы «Собрать ланч» */
- 
- @media (max-width: 800px) {
-       section > div {   
-           grid-template-columns: repeat(3, 1fr);
-       }
- }
+  cursor: pointer;
+  filter: drop-shadow(17px 19px 24px rgba(0, 0, 0, 0.13));
+  transition: border 0.3s;
+}
+.dish {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.dish-container:hover {
+  border: 2px solid tomato; /* Появление сплошной границы при наведении */
+}
+
+.dish-container img {
+  width: 70%; /* Уменьшение ширины изображения до 33% от родительского контейнера */
+  border-radius: 35px; /* Радиус закругления изображения */
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
+.dish-container p.price {
+  font-size: 1.2em; /* Увеличение размера шрифта цены */
+  margin: 5px 0;
+}
+
+.dish-container p.name {
+  font-size: 1.5em; /* Увеличение размера шрифта названия блюда */
+  margin: 5px 0;
+}
+
+.dish-container p.volume {
+  color: gray; /* Изменение цвета текста на серый для веса/объема */
+  margin: 5px 0;
+}
+
+.dish-container button {
+  background-color: #f1eee9;
+  margin-top: 10px; /* Обязательный отступ сверху для кнопки */
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 30px;
+  padding-right: 30px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.dish-container button:hover {
+  background-color: tomato; /* Изменение цвета фона кнопки при наведении */
+}
+#order-form {
+   margin-top: 40px;
+   padding: 40px; /* Увеличиваем отступы */
+   background-color: #f7e2e2;
+   border-radius: 10px;
+}
+#order-form small {
+   font-style: italic;
+   font-size: smaller;
+   display: block; /* Убедитесь, что текст занимает отдельную строку */
+   margin-top: 5px; /* Добавьте отступ сверху для равномерности */
+}
+
+#order-form h3 {
+   margin-top: 20px;
+}
+
+#order-form label {
+   display: block;
+   margin-bottom: 10px; /* Увеличиваем отступ между метками */
+}
+
+#order-form input,
+#order-form select,
+#order-form textarea {
+    width: calc(66.67% - 20px); /* Уменьшаем ширину на 1,5 раза */
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border: 1px solid #ff70a2;
+}
+
+#order-form button {
+   margin-right: 10px;
+}
+
+/* Адаптивные стили для страницы «Собрать ланч» */
+
+@media (max-width: 800px) {
+  section > div {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
