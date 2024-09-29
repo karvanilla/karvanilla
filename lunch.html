@@ -15,12 +15,12 @@
 
     <link
       rel="stylesheet"
-      href="styles.css"
+      href="/Users/karvanilla/Desktop/exam/web/styles/styles.css"
     />
 
     <link
       rel="stylesheet"
-      href="lunch.css"
+      href="/Users/karvanilla/Desktop/exam/web/styles/lunch.css"
     />
   </head>
   <body>
@@ -30,7 +30,7 @@
       <nav>
         <a href="#about">О нас</a>
 
-        <a href="index.html"
+        <a href="/Users/karvanilla/Desktop/exam/web/index.html"
           >Главная страница</a
         >
 
@@ -47,7 +47,7 @@
         <section class="dish-container">
           <div class="dish">
             <img
-              src="soup1.jpeg"
+              src="/Users/karvanilla/Desktop/exam/web/soup1.jpeg"
               alt="Суп с курицей"
             />
 
@@ -62,7 +62,7 @@
 
           <div class="dish">
             <img
-              src="soup2.jpeg"
+              src="/Users/karvanilla/Desktop/exam/web/soup2.jpeg"
               alt="Грибной суп"
             />
 
@@ -77,7 +77,7 @@
 
           <div class="dish">
             <img
-              src="soup3.jpg"
+              src="/Users/karvanilla/Desktop/exam/web/soup3.jpg"
               alt="Томатный суп"
             />
 
@@ -96,7 +96,7 @@
         <section class="dish-container">
           <div class="dish">
             <img
-              src="ris.jpeg"
+              src="/Users/karvanilla/Desktop/exam/web/ris.jpeg"
               alt="Курица с рисом"
             />
             <p class="name">Курица с рисом</p>
@@ -107,7 +107,7 @@
 
           <div class="dish">
             <img
-              src="pasta.jpeg"
+              src="/Users/karvanilla/Desktop/exam/web/pasta.jpeg"
               alt="Карбонара"
             />
             <p class="name">Карбонара</p>
@@ -118,7 +118,7 @@
 
           <div class="dish">
             <img
-              src="m.jpeg"
+              src="/Users/karvanilla/Desktop/exam/web/m.jpeg"
               alt="Филе миньон"
             />
             <p class="name">Филе миньон</p>
@@ -133,7 +133,7 @@
         <section class="dish-container">
           <div class="dish">
             <img
-              src="ap.jpeg"
+              src="/Users/karvanilla/Desktop/exam/web/ap.jpeg"
               alt="Сок апельсиновый"
             />
             <p class="name">Сок апельсиновый</p>
@@ -143,7 +143,7 @@
           </div>
           <div class="dish">
             <img
-              src="mohito.jpeg"
+              src="/Users/karvanilla/Desktop/exam/web/mohito.jpeg"
               alt="Малиновый мохито"
             />
             <p class="name">Малиновый мохито</p>
@@ -153,7 +153,7 @@
           </div>
           <div class="dish">
             <img
-              src="milk.jpeg"
+              src="/Users/karvanilla/Desktop/exam/web/milk.jpeg"
               alt="Клубничный милкшейк"
             />
             <p class="name">Клубничный милкшейк</p>
@@ -164,6 +164,107 @@
         </section>
       </section>
     </main>
+    <section id="order-form">
+      <h2 style="text-align: center; font-weight: bold; font-size: 1.5em">
+        Сделать заказ
+      </h2>
+      <form action="https://httpbin.org/post" method="POST">
+        <div style="display: flex; justify-content: space-between">
+          <div style="width: 45%; margin-right: 5%">
+            <h3>Ваш заказ</h3>
+            <label for="soup">Выберите суп:</label>
+            <select id="soup" name="soup" required>
+              <option value="">Выберите суп</option>
+              <option value="chicken_soup">Суп с курицей</option>
+              <option value="mushroom_soup">Грибной суп</option>
+              <option value="tomato_soup">Томатный суп</option>
+            </select>
+
+            <label for="main-dish">Выберите главное блюдо:</label>
+            <select id="main-dish" name="main_dish" required>
+              <option value="">Выберите главное блюдо</option>
+              <option value="chicken_rice">Курица с рисом</option>
+              <option value="carbonara">Карбонара</option>
+              <option value="filet_mignon">Филе миньон</option>
+            </select>
+
+            <label for="drink">Выберите напиток:</label>
+            <select id="drink" name="drink" required>
+              <option value="">Выберите напиток</option>
+              <option value="orange_juice">Сок апельсиновый</option>
+              <option value="raspberry_mojito">Малиновый мохито</option>
+              <option value="strawberry_milkshake">Клубничный милкшейк</option>
+            </select>
+
+            <label for="comments">Комментарий:</label>
+            <textarea id="comments" name="comments"></textarea>
+          </div>
+
+          <div style="width: 45%">
+            <h3>Ваши данные</h3>
+            <label for="name">Имя:</label>
+            <input type="text" id="name" name="name" required />
+
+            <label for="email">Почта:</label>
+            <input type="email" id="email" name="email" required />
+
+            <label for="subscribe">
+              <input type="checkbox" id="subscribe" name="subscribe" checked> 
+              <span style="font-style: italic; font-size: smaller; display: inline-block; margin-top: 5px;">Получать информацию о скидках и акциях</span>
+          </label>
+
+            <label for="phone">Телефон:</label>
+            <input type="tel" id="phone" name="phone" required />
+
+            <label for="address">Адрес:</label>
+            <input type="text" id="address" name="address" required />
+            <small style="font-style: italic; font-size: smaller"
+              >Доставка осуществляется только по Москве</small
+            >
+
+            <fieldset style="border: none">
+              <legend>Время доставки:</legend>
+              <div style="display: flex; align-items: center">
+                <label for="asap" style="margin-right: 10px">
+                  <input
+                    type="radio"
+                    id="asap"
+                    name="delivery_time"
+                    value="asap"
+                    required
+                  />
+                </label>
+                <span style="margin-right: 20px">Как можно скорее</span>
+
+                <label for="scheduled" style="margin-right: 10px">
+                  <input
+                    type="radio"
+                    id="scheduled"
+                    name="delivery_time"
+                    value="scheduled"
+                  />
+                </label>
+                <span>К указанному времени</span>
+              </div>
+
+              <label for="delivery-time">Укажите время доставки:</label>
+              <input
+                type="time"
+                id="delivery-time"
+                name="delivery_time_input"
+                min="07:00"
+                max="23:00"
+                step="300"
+              />
+              <small>Доступное время доставки с 7:00 до 23:00</small>
+            </fieldset>
+
+            <button type="reset">Сбросить</button>
+            <button type="submit">Отправить</button>
+          </div>
+        </div>
+      </form>
+    </section>
     <footer id="contacts">
       <p>
         Контактные данные:
