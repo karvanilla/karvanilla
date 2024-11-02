@@ -9,7 +9,7 @@ const meals = [
     category: "soup",
     kind: "meat",
     count: "300 мл",
-    image: "/Users/karvanilla/Desktop/exam/web/images/с курицей.png",
+    image: "images/с курицей.png",
   },
   {
     keyword: "grib",
@@ -18,7 +18,7 @@ const meals = [
     category: "soup",
     kind: "veg",
     count: "300 мл",
-    image: "/Users/karvanilla/Desktop/exam/web/images/грибной.png",
+    image: "images/грибной.png",
   },
   {
     keyword: "tomato",
@@ -27,7 +27,7 @@ const meals = [
     category: "soup",
     kind: "veg",
     count: "300 мл",
-    image: "/Users/karvanilla/Desktop/exam/web/images/томатный.png",
+    image: "images/томатный.png",
   },
   {
     keyword: "borsh",
@@ -36,7 +36,7 @@ const meals = [
     category: "soup",
     kind: "meat",
     count: "300 мл",
-    image: "/Users/karvanilla/Desktop/exam/web/images/Борщ.png",
+    image: "images/Борщ.png",
   },
   {
     keyword: "sheese",
@@ -45,7 +45,7 @@ const meals = [
     category: "soup",
     kind: "veg",
     count: "300 мл",
-    image: "/Users/karvanilla/Desktop/exam/web/images/сырный.png",
+    image: "images/сырный.png",
   },
   {
     keyword: "Uxa",
@@ -54,7 +54,7 @@ const meals = [
     category: "soup",
     kind: "fish",
     count: "300 мл",
-    image: "/Users/karvanilla/Desktop/exam/web/images/уха.png",
+    image: "images/уха.png",
   },
 
   // Главное блюдо
@@ -65,7 +65,7 @@ const meals = [
     category: "main",
     kind: "meat",
     count: "400 гр",
-    image: "/Users/karvanilla/Desktop/exam/web/images/рис.png",
+    image: "images/рис.png",
   },
   {
     keyword: "karbonara",
@@ -74,7 +74,7 @@ const meals = [
     category: "main",
     kind: "veg",
     count: "350 гр",
-    image: "/Users/karvanilla/Desktop/exam/web/images/карбонара.png",
+    image: "images/карбонара.png",
   },
   {
     keyword: "file",
@@ -83,7 +83,7 @@ const meals = [
     category: "main",
     kind: "veg",
     count: "300 гр",
-    image: "/Users/karvanilla/Desktop/exam/web/images/филе.png",
+    image: "images/филе.png",
   },
   {
     keyword: "paltus",
@@ -92,7 +92,7 @@ const meals = [
     category: "main",
     kind: "fish",
     count: "300 гр",
-    image: "/Users/karvanilla/Desktop/exam/web/images/палтус.png",
+    image: "images/палтус.png",
   },
   {
     keyword: "pig_meat",
@@ -101,7 +101,7 @@ const meals = [
     category: "main",
     kind: "meat",
     count: "300 гр",
-    image: "/Users/karvanilla/Desktop/exam/web/images/ребра.png",
+    image: "images/ребра.png",
   },
   {
     keyword: "dorado",
@@ -110,7 +110,7 @@ const meals = [
     category: "main",
     kind: "fish",
     count: "300 гр",
-    image: "/Users/karvanilla/Desktop/exam/web/images/дорадо.png",
+    image: "images/дорадо.png",
   },
 
   // Салаты и стартеры
@@ -120,7 +120,7 @@ const meals = [
     price: 600,
     category: "salad",
     count: "280 г",
-    image: "/Users/karvanilla/Desktop/exam/web/images/салутка.png",
+    image: "images/салутка.png",
     kind: "meat",
   },
   {
@@ -129,7 +129,7 @@ const meals = [
     price: 890,
     category: "salad",
     count: "350 г",
-    image: "/Users/karvanilla/Desktop/exam/web/images/салкраб.png",
+    image: "images/салкраб.png",
     kind: "meat",
   },
   {
@@ -138,7 +138,7 @@ const meals = [
     price: 450,
     category: "salad",
     count: "380 г",
-    image: "/Users/karvanilla/Desktop/exam/web/images/авокадо.png",
+    image: "images/авокадо.png",
     kind: "veg",
   },
   {
@@ -147,7 +147,7 @@ const meals = [
     price: 490,
     category: "salad",
     count: "200 г",
-    image: "/Users/karvanilla/Desktop/exam/web/images/скреветкамми.png",
+    image: "images/скреветкамми.png",
     kind: "fish",
   },
   {
@@ -157,7 +157,7 @@ const meals = [
     category: "salad",
     kind: "fish",
     count: "250г",
-    image: "/Users/karvanilla/Desktop/exam/web/images/рыбный.png",
+    image: "images/рыбный.png",
   },
   {
     keyword: "greek_salad",
@@ -166,7 +166,7 @@ const meals = [
     category: "salad",
     kind: "veg",
     count: "300г",
-    image: "/Users/karvanilla/Desktop/exam/web/images/греческий.png",
+    image: "images/греческий.png",
   },
 
   // Десерты
@@ -177,7 +177,7 @@ const meals = [
     category: "dessert",
     count: "200 г",
     kind: "small",
-    image: "/Users/karvanilla/Desktop/exam/web/images/морож.png",
+    image: "images/морож.png",
   },
   {
     keyword: "sorbet",
@@ -186,7 +186,7 @@ const meals = [
     category: "dessert",
     count: "100 г",
     kind: "small",
-    image: "/Users/karvanilla/Desktop/exam/web/images/сорбет.png",
+    image: "images/сорбет.png",
   },
   {
     keyword: "3shocolate",
@@ -195,7 +195,7 @@ const meals = [
     category: "dessert",
     count: "140 г",
     kind: "large",
-    image: "/Users/karvanilla/Desktop/exam/web/images/3шоколада.png",
+    image: "images/3шоколада.png",
   },
   {
     keyword: "berries",
@@ -204,7 +204,7 @@ const meals = [
     category: "dessert",
     kind: "medium",
     count: "300 г",
-    image: "/Users/karvanilla/Desktop/exam/web/images/клубникасливки.png",
+    image: "images/клубникасливки.png",
   },
   {
     keyword: "medovik",
@@ -213,7 +213,7 @@ const meals = [
     category: "dessert",
     count: "300 г",
     kind: "large",
-    image: "/Users/karvanilla/Desktop/exam/web/images/Снимок экрана 2024-11-01 в 03.34.34.png",
+    image: "images/Снимок экрана 2024-11-01 в 03.34.34.png",
   },
   {
     keyword: "chocolate_mousse",
@@ -222,7 +222,7 @@ const meals = [
     category: "dessert",
     kind: "medium",
     count: "150г",
-    image: "/Users/karvanilla/Desktop/exam/web/images/шокомусс.png",
+    image: "images/шокомусс.png",
   },
 
   // Напитки
@@ -231,7 +231,7 @@ const meals = [
     name: "Сок апельсиновый",
     price: 70,
     count: "70 мл",
-    image: "/Users/karvanilla/Desktop/exam/web/images/апельсиновыйсок.png",
+    image: "images/апельсиновыйсок.png",
     category: "drink",
     kind: "cold",
   },
@@ -240,7 +240,7 @@ const meals = [
     name: "Малиновый мохито",
     price: 180,
     count: "180 мл",
-    image: "/Users/karvanilla/Desktop/exam/web/images/мохито.png",
+    image: "images/мохито.png",
     category: "drink",
     kind: "cold",
   },
@@ -249,7 +249,7 @@ const meals = [
     name: "Клубничный милкшейк",
     price: 110,
     count: "200 мл",
-    image: "/Users/karvanilla/Desktop/exam/web/images/милккокт.png",
+    image: "images/милккокт.png",
     category: "drink",
     kind: "cold",
   },
@@ -258,7 +258,7 @@ const meals = [
     name: "Фраппе",
     price: 330,
     count: "300 мл",
-    image: "/Users/karvanilla/Desktop/exam/web/images/фраппе.png",
+    image: "images/фраппе.png",
     category: "drink",
     kind: "hot",
   },
@@ -267,7 +267,7 @@ const meals = [
     name: "Латте",
     price: 350,
     count: "300 мл",
-    image: "/Users/karvanilla/Desktop/exam/web/images/латте.png",
+    image: "images/латте.png",
     category: "drink",
     kind: "hot",
   },
@@ -278,6 +278,6 @@ const meals = [
     category: "drink",
     kind: "hot",
     count: "30 мл",
-    image: "/Users/karvanilla/Desktop/exam/web/images/эсппрессо.png",
+    image: "images/эсппрессо.png",
   },
 ];
